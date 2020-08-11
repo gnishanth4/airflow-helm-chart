@@ -504,7 +504,7 @@ dags:
   doNotPickle: false
   ##
   ## Configure Git repository to fetch DAGs
-  gitSync:
+gitSync:
    enabled: true
     # git repo clone url
     # ssh examples ssh://git@github.com/apache/airflow.git
