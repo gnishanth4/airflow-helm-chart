@@ -449,7 +449,7 @@ persistence:
   enabled: true
   ##
   ## Existing claim to use
-  existingClaim: nil
+  ##existingClaim: nil
   ## Existing claim's subPath to use, e.g. "dags" (optional)
   subPath: ""
   ##
