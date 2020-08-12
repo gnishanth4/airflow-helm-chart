@@ -446,7 +446,7 @@ ingress:
 persistence:
   ##
   ## enable persistance storage
-  enabled: false
+  enabled: true
   ##
   ## Existing claim to use
   existingClaim: nil
@@ -470,7 +470,7 @@ persistence:
 logsPersistence:
   ##
   ## enable persistance storage
-  enabled: false
+  enabled: true
   ##
   ## Existing claim to use
   # existingClaim: nil
@@ -517,7 +517,7 @@ dags:
     secret: ""
   initContainer:
     ## Fetch the source code when the pods starts
-    enabled: false
+    enabled: true
     ## Image for the init container (any image with git will do)
     image:
       ## docker-airflow image
@@ -592,7 +592,7 @@ postgresql:
   persistence:
     ##
     ## Enable PostgreSQL persistence using Persistent Volume Claims.
-    enabled: false
+    enabled: true
     ##
     ## Persistant class
     # storageClass: classname
