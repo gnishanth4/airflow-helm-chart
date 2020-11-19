@@ -160,8 +160,8 @@ airflow:
   #     mountPath: /dags
   extraVolumeMounts: []
   ## Additional volumeMounts to the main containers in the Scheduler, Worker and Web pods.
-  # - name: synchronised-dags
-  #   mountPath: /usr/local/airflow/dags
+   - name: synchronised-dags
+     mountPath: /usr/local/airflow/dags
   extraVolumes: []
   ## Additional volumes for the Scheduler, Worker and Web pods.
   # - name: synchronised-dags
@@ -517,7 +517,7 @@ dags:
     secret: ""
   initContainer:
     ## Fetch the source code when the pods starts
-    enabled: true
+    enabled: false
     ## Image for the init container (any image with git will do)
     image:
       ## docker-airflow image
